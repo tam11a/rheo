@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory&family=Josefin+Sans:wght@300&display=swap');
+
+:root{
+    --c1: #191869;
+    --c2: #59FEFF;
+    --white: #fff;
+    --black: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Glory', sans-serif;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */   
+}
+.h100{
+    height: 100%;
+}
+.w100{
+    width: 100%;
+}
+.flex-inline,
+.flex-col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-col{
+    flex-direction: column;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 30px;
+    overflow: hidden;
+}
+.splashGIF{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    z-index: -1;
+}
+.splash{
+    padding: 50px 0;
+}
+.name{
+    text-transform: uppercase;
+    font-size: 3.5em;
+    color: transparent;
+    -webkit-text-stroke: 0.5px var(--black);
+    font-weight: bold;
+}
+.name span{
+    color: var(--black);
+    -webkit-text-stroke: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+.primary-btn{
+    border: 8px solid var(--black);
+    border-radius: 40px;
+    padding: 13px 30px;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 1.5em;
+}
+.xss{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
